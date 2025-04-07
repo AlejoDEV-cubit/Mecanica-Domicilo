@@ -1,0 +1,159 @@
+/* FUENTE GENERAL */
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* SECCIÓN DE SERVICIOS */
+.seccion-servicios {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f6f7fb;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(50, 50, 93, 0.05);
+}
+
+.seccion-servicios h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta-servicio {
+  background: #2b2d3a;
+  border: 2px solid #a891df;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(50, 50, 93, 0.1);
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.tarjeta-servicio h3 {
+  color: #dbc9ff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta-servicio p {
+  color: #e5e5e5;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.tarjeta-servicio:hover h3 {
+  transform: translateY(-10px);
+}
+
+.tarjeta-servicio:hover p {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+@media (hover: none) {
+  .tarjeta-servicio.active p {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+  }
+
+  .tarjeta-servicio.active h3 {
+    transform: translateY(-10px);
+  }
+}
+
+/* SECCIÓN DE CONTACTO */
+#contacto {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  background-color: #f4f4fa;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+#contacto h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2b2d3a;
+  margin-bottom: 1rem;
+}
+
+#contacto p {
+  font-size: 1rem;
+  color: #444;
+  margin: 1rem 0;
+}
+
+#contacto label {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+#contacto input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+#contacto a {
+  color: #5e4edb;
+  text-decoration: underline;
+}
+
+#btnWhatsapp {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3);
+  animation: pulso 2.5s infinite;
+}
+
+#btnWhatsapp:hover {
+  background-color: #1ebc59;
+  transform: scale(1.05);
+}
+
+@keyframes pulso {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}

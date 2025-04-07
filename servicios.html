@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <link rel="stylesheet" href="css/servicios.css">
+  <link rel="stylesheet" href="css/estilos_foother_haver.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li><a href="terminos.html">Términos</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+      <section id="servicios" class="seccion-servicios">
+        <h1>Servicios disponibles</h1>
+        <p class="subtitulo">Conoce los trabajos que realizamos, desde diagnósticos hasta reparaciones completas. Da clic o pasa el mouse para ver más detalles.</p>
+    
+        <div class="contenedor-servicios">
+          <div class="tarjeta-servicio">
+            <h3>Electricidad automotriz</h3>
+            <p>La electricidad automotriz es un servicio esencial que permite que todos los sistemas eléctricos del vehículo, desde las luces hasta el arranque y los sistemas de seguridad, funcionen correctamente.</p>
+          </div>
+          <div class="tarjeta-servicio">
+            <h3>Aire acondicionado automotriz</h3>
+            <p>¿El aire no enfría o huele mal? Revisión completa del sistema, carga de gas, limpieza de filtros y chequeo de compresores para dejarlo perfecto.</p>
+          </div>
+          <div class="tarjeta-servicio">
+            <h3>Freno general</h3>
+            <p>Revisión de pastillas, discos, líquido y calibración. Garantizamos seguridad con repuestos de alta calidad.</p>
+          </div>
+          <div class="tarjeta-servicio">
+            <h3>Mecánica rápida</h3>
+            <p>Cambios de aceite, filtros, revisión de niveles y ajustes básicos. Todo rápido pero bien hecho.</p>
+          </div>
+          <div class="tarjeta-servicio">
+            <h3>Sincronización</h3>
+            <p>Ajustamos el encendido, revisamos bujías y filtros para que el motor rinda mejor y gaste menos gasolina.</p>
+          </div>
+          <div class="tarjeta-servicio">
+            <h3>Escaneo</h3>
+            <p>Diagnóstico electrónico con escáner. Detectamos fallas ocultas en sensores, inyectores y sistemas eléctricos.</p>
+          </div>
+          <div class="tarjeta-servicio">
+            <h3>Diagnóstico virtual o presencial</h3>
+            <p>Servicio para detectar problemas y cotizar repuestos. Puede ser por videollamada o en tu casa.</p>
+          </div>
+        </div>
+      </section>
+    
+
+    <!-- BLOQUE DE CONTACTO -->
+    <section id="contacto">
+      <h2>¿Deseas contactar al mecánico?</h2>
+
+      <p>✅ Puedes escribir al WhatsApp para <strong>agendar una cita</strong> o <strong>consultar precios generales</strong>, lo llamaremos lo mas antes posible. Esa conversación inicial <strong>no tiene costo</strong> y es solo para aclarar dudas básicas.</p>
+
+      <p>⚠️ Pero si deseas un <strong>diagnóstico del vehículo</strong> —ya sea <em>virtual</em> o <em>presencial</em>— este servicio <strong>sí tiene costo</strong>, pues requiere análisis técnico, tiempo y experiencia.</p>
+
+      <p>📲 En el caso de los diagnósticos virtuales, <strong>debes realizar el pago anticipado</strong> por Nequi antes de recibir el análisis detallado. (el precio de este es aclarado en la misma llamada inicial)</p>
+
+      <p>🧰 El servicio presencial se paga normalmente <strong>al finalizar el trabajo</strong>.</p>
+
+      <!-- Checkbox de aceptación -->
+      <label>
+        <input type="checkbox" id="aceptaTerminos">
+        Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a>
+      </label><br><br>
+
+      <!-- Botón con verificación -->
+      <button id="btnWhatsapp">📲 Escribir por WhatsApp</button>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 Mecánica a Domicilio - <a href="terminos.html">Términos y condiciones</a></p>
+    <p>🚗 ¡Gracias por visitarnos! Esperamos poder ayudarte muy pronto. Que tengas un excelente día. 😊</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    document.getElementById("btnWhatsapp").addEventListener("click", function () {
+      const acepta = document.getElementById("aceptaTerminos").checked;
+
+      if (acepta) {
+        window.open("https://wa.me/573043290402?text=Hola%20buenas%2C%20quisiera%20saber%20acerca%20de%20los%20servicios%20de%20mec%C3%A1nica%20a%20domicilio%20%F0%9F%98%8A", "_blank");
+      } else {
+        alert("Por favor, acepta los términos y condiciones antes de continuar.");
+      }
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.tarjeta-servicio').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('active');
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

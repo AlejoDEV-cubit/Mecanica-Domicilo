@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clientes</title>
+  <link rel="stylesheet" href="css/testimonios.css">
+  <link rel="stylesheet" href="css/estilos_foother_haver.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li><a href="terminos.html">Términos</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section id="testimonios">
+      <h1>Testimonios de clientes</h1>
+      <p>Conoce la experiencia de quienes ya han confiado en nuestro trabajo.</p>
+
+      <div class="reseña">
+        <h3>NOMBREEE</h3>
+        <video 
+          src="videos/dago.mp4" 
+          class="video-reseña" 
+          muted 
+          preload="metadata"
+        ></video>
+        <div class="estrellas">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+
+      <div class="reseña">
+        <h3>NOMBREEEE</h3>
+        <video 
+          src="videos/ivan .mp4" 
+          class="video-reseña" 
+          muted 
+          preload="metadata"
+        ></video>
+        <div class="estrellas">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+
+      <div class="reseña">
+        <h3>NOMBREEEE</h3>
+        <video 
+          src="videos/FABIO.mp4" 
+          class="video-reseña" 
+          muted 
+          preload="metadata"
+        ></video>
+        <div class="estrellas">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+
+      <!-- Agrega más testimonios aquí -->
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 Mecánica a Domicilio - <a href="terminos.html">Términos y condiciones</a></p>
+    <p>🚗 ¡Gracias por visitarnos! Esperamos poder ayudarte muy pronto. Que tengas un excelente día. 😊</p>
+  </footer>
+
+  <!-- SCRIPTS PARA LOS VIDEOS -->
+  <script>
+    const videos = document.querySelectorAll('.video-reseña');
+
+    videos.forEach(video => {
+      let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      if (!isMobile) {
+        // En computadoras
+        video.addEventListener('mouseenter', () => {
+          video.muted = false;
+          video.play();
+        });
+
+        video.addEventListener('mouseleave', () => {
+          video.pause();
+        });
+
+        video.addEventListener('click', () => {
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      } else {
+        // En celulares
+        video.addEventListener('click', () => {
+          video.muted = false;
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+              entry.target.pause();
+            }
+          });
+        }, { threshold: 0.1 });
+
+        observer.observe(video);
+      }
+    });
+  </script>
+</body>
+</html>

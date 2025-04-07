@@ -1,0 +1,95 @@
+/* ======== NAVBAR ======== */
+nav {
+    position: sticky; /* Se mantiene arriba al hacer scroll */
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #7b2cbf; /* morado elegante */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover::after,
+  nav ul li a:focus::after {
+    width: 100%;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: #d0bfff;
+  }
+  
+  /* ======== FOOTER ======== */
+  footer {
+    background-color: #2d2a55; /* Morado profesional, oscuro y legible */
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 5px solid #7b2cbf; /* línea superior morada */
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  footer a {
+    color: #d0bfff;
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: #ffffff;
+  }
+  
+  /* ======== RESPONSIVE ======== */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-bottom: 0.5rem;
+    }
+  
+    nav ul li a {
+      font-size: 1rem;
+    }
+  
+    footer {
+      font-size: 0.95rem;
+      padding: 1.5rem 1rem;
+    }
+  }
+  
