@@ -3,124 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>clientes</title>
+  <title>Testimonios | Don Jorge Mecánica</title>
+  
+  <!-- Fuentes mejoradas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Enlace al CSS -->
   <link rel="stylesheet" href="css/testimonios.css">
-  <link rel="stylesheet" href="css/estilos_foother_haver.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR MEJORADO -->
   <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="testimonios.html">Testimonios</a></li>
-      <li><a href="acerca.html">Acerca de</a></li>
-      <li><a href="terminos.html">Términos</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-car"></i></span>
+        <span class="logo-text">DON JORGE MECÁNICA</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="testimonios.html" class="active">Testimonios</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+      </ul>
+    </div>
   </nav>
+
+  <!-- HERO SECTION PARA TESTIMONIOS -->
+  <section id="hero-testimonios">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">TESTIMONIOS REALES</h1>
+      <p class="hero-subtitle">La voz de nuestros clientes satisfechos</p>
+    </div>
+  </section>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
     <section id="testimonios">
-      <h1>Testimonios de clientes</h1>
-      <p>Conoce la experiencia de quienes ya han confiado en nuestro trabajo.</p>
-
-      <div class="reseña">
-        <h3>NOMBREEE</h3>
-        <video 
-          src="videos/dago.mp4" 
-          class="video-reseña" 
-          muted 
-          preload="metadata"
-        ></video>
-        <div class="estrellas">
-          ⭐⭐⭐⭐⭐
-        </div>
+      <div class="section-header">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p class="section-subtitle">Conoce la experiencia de quienes ya han confiado en nuestro trabajo</p>
       </div>
 
-      <div class="reseña">
-        <h3>NOMBREEEE</h3>
-        <video 
-          src="videos/ivan .mp4" 
-          class="video-reseña" 
-          muted 
-          preload="metadata"
-        ></video>
-        <div class="estrellas">
-          ⭐⭐⭐⭐⭐
+      <div class="contenedor-testimonios">
+        <!-- Testimonio 1 -->
+        <div class="testimonio">
+          <div class="testimonio-video">
+            <video src="videos/dago.mp4" class="video-reseña" muted preload="metadata" poster="img/poster-dago.jpg"></video>
+            <div class="play-icon"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="testimonio-info">
+            <h3>Dagoberto Valencia</h3>
+            <div class="estrellas">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-texto">"Excelente servicio, llegó puntual y resolvió el problema de mi auto en menos de una hora. ¡Totalmente recomendado!"</p>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonio">
+          <div class="testimonio-video">
+            <video src="videos/ivan .mp4" class="video-reseña" muted preload="metadata" poster="img/poster-ivan.jpg"></video>
+            <div class="play-icon"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="testimonio-info">
+            <h3>Fabio Zayus</h3>
+            <div class="estrellas">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-texto">"Don Jorge es un profesional, diagnosticó el problema a la primera y me explicó todo con claridad. Volveré a llamarlo."</p>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonio">
+          <div class="testimonio-video">
+            <video src="videos/FABIO.mp4" class="video-reseña" muted preload="metadata" poster="img/poster-fabio.jpg"></video>
+            <div class="play-icon"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="testimonio-info">
+            <h3>Fabio Zayus</h3>
+            <div class="estrellas">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonio-texto">"El mejor servicio a domicilio que he contratado. Precios justos y trabajo impecable. ¡5 estrellas bien merecidas!"</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="reseña">
-        <h3>NOMBREEEE</h3>
-        <video 
-          src="videos/FABIO.mp4" 
-          class="video-reseña" 
-          muted 
-          preload="metadata"
-        ></video>
-        <div class="estrellas">
-          ⭐⭐⭐⭐⭐
-        </div>
+    <!-- BLOQUE DE LLAMADO A LA ACCIÓN -->
+    <section id="cta">
+      <div class="cta-container">
+        <h2>¿Listo para experimentar nuestro servicio?</h2>
+        <p>Agenda una cita hoy mismo y únete a nuestra lista de clientes satisfechos</p>
+        <a href="servicios.html" class="cta-btn">Ver servicios disponibles</a>
       </div>
-
-      <!-- Agrega más testimonios aquí -->
     </section>
   </main>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA MEJORADO -->
   <footer>
-    <p>&copy; 2025 Mecánica a Domicilio - <a href="terminos.html">Términos y condiciones</a></p>
-    <p>🚗 ¡Gracias por visitarnos! Esperamos poder ayudarte muy pronto. Que tengas un excelente día. 😊</p>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>DON JORGE MECÁNICA</h3>
+        <p>Servicio mecánico profesional a domicilio</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto (developer web)</h4>
+        <p><i class="fas fa-phone"></i> +57 301 1363244</p>
+        <p><i class="fas fa-envelope"></i> alejandro2007campo1@gmail.com </p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Testimonios</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Don Jorge Mecánica. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
-  <!-- SCRIPTS PARA LOS VIDEOS -->
+  <!-- SCRIPTS -->
   <script>
-    const videos = document.querySelectorAll('.video-reseña');
+    document.addEventListener('DOMContentLoaded', function() {
+      const videos = document.querySelectorAll('.video-reseña');
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    videos.forEach(video => {
-      let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-      if (!isMobile) {
-        // En computadoras
-        video.addEventListener('mouseenter', () => {
-          video.muted = false;
-          video.play();
+      videos.forEach(video => {
+        const container = video.closest('.testimonio-video');
+        const playIcon = container.querySelector('.play-icon');
+        
+        // Mostrar/ocultar icono de play
+        video.addEventListener('play', () => {
+          playIcon.style.display = 'none';
+        });
+        
+        video.addEventListener('pause', () => {
+          playIcon.style.display = 'flex';
         });
 
-        video.addEventListener('mouseleave', () => {
-          video.pause();
-        });
+        if (!isMobile) {
+          // Comportamiento para desktop
+          container.addEventListener('mouseenter', () => {
+            video.muted = true;
+            video.play().catch(e => console.log(e));
+          });
 
-        video.addEventListener('click', () => {
-          if (video.paused) {
-            video.play();
-          } else {
+          container.addEventListener('mouseleave', () => {
             video.pause();
-          }
-        });
-      } else {
-        // En celulares
-        video.addEventListener('click', () => {
-          video.muted = false;
-          if (video.paused) {
-            video.play();
-          } else {
-            video.pause();
-          }
-        });
+            video.currentTime = 0;
+          });
 
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-              entry.target.pause();
+          container.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (video.paused) {
+              video.muted = false;
+              video.play().catch(e => console.log(e));
+            } else {
+              video.pause();
             }
           });
-        }, { threshold: 0.1 });
+        } else {
+          // Comportamiento para móvil
+          container.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (video.paused) {
+              video.muted = false;
+              video.play().catch(e => console.log(e));
+            } else {
+              video.pause();
+            }
+          });
 
-        observer.observe(video);
-      }
+          // Pausar videos cuando no están visibles
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              const video = entry.target.querySelector('.video-reseña');
+              if (!entry.isIntersecting && !video.paused) {
+                video.pause();
+              }
+            });
+          }, { threshold: 0.1 });
+
+          observer.observe(container);
+        }
+      });
     });
   </script>
 </body>

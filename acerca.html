@@ -3,54 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acerca de jorge</title>
-  <link rel="stylesheet" href="css/estilos_foother_haver.css">
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/estilos.css">
+  <title>Acerca de Jorge | Don Jorge Mecánica</title>
+  
+  <!-- Fuentes mejoradas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="css/acerca.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR MEJORADO -->
   <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="testimonios.html">Testimonios</a></li>
-      <li><a href="acerca.html">Acerca de</a></li>
-      <li><a href="terminos.html">Términos</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-car"></i></span>
+        <span class="logo-text">DON JORGE MECÁNICA</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="acerca.html" class="active">Acerca de</a></li>
+      </ul>
+    </div>
   </nav>
+
+  <!-- HERO SECTION PARA ACERCA DE -->
+  <section id="hero-acerca">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">CONOCE AL MECÁNICO</h1>
+      <p class="hero-subtitle">La experiencia y profesionalismo detrás de nuestro servicio</p>
+    </div>
+  </section>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
     <section id="acerca">
-      <h1>¿Quién está detrás de este servicio?</h1>
-
-      <div class="perfil">
-        <img src="imagenes/mecanico.jpg" alt="Foto del mecánico" class="foto-mecanico">
+      <div class="perfil-container">
+        <div class="foto-container">
+          <img src="foto/jorge.png" alt="Jorge Charria - Mecánico profesional" class="foto-mecanico">
+          <div class="experiencia-badge">
+            <i class="fas fa-tools"></i>
+            <span>+15 años de experiencia</span>
+          </div>
+        </div>
 
         <div class="info-mecanico">
-          <h2>Jorge</h2>
-          <p>
-            Soy técnico en mecánica automotriz con más de <strong>20 años de experiencia</strong> en reparación y mantenimiento de todo tipo de vehículos. Durante muchos años trabajé en talleres reconocidos, y con el tiempo decidí ofrecer mi conocimiento directamente a los hogares, llevando el servicio hasta donde tú lo necesites.
-          </p>
-          <p>
-            Mi prioridad es la <strong>honestidad, calidad y responsabilidad</strong>. Cada carro que reviso lo trato como si fuera mío, y mi objetivo es que el cliente se sienta tranquilo, seguro y satisfecho con el trabajo realizado.
-          </p>
-          <p>
-            Ya son muchos los clientes que han confiado en mí y que siguen regresando por el buen trato, los diagnósticos acertados y el compromiso en cada visita. Puedes ver algunos de sus comentarios en la sección de <a href="testimonios.html">testimonios</a>.
-          </p>
+          <h2><span class="nombre-destacado">Jorge</span> Charria</h2>
+          <p class="especialidad">Técnico en Mecánica Automotriz</p>
+          
+          <div class="descripcion">
+            <p>
+              <i class="fas fa-quote-left"></i> Soy técnico en mecánica automotriz con más de <strong>35 años de experiencia</strong> en reparación y mantenimiento de todo tipo de vehículos. Comencé mi carrera en talleres tradicionales, y con el tiempo decidí ofrecer mi conocimiento directamente a los hogares, llevando el servicio hasta donde tú lo necesites.
+            </p>
+            
+            <div class="valores">
+              <div class="valor-item">
+                <i class="fas fa-hand-holding-heart"></i>
+                <div>
+                  <h3>Honestidad</h3>
+                  <p>Siempre transparente en diagnósticos y presupuestos</p>
+                </div>
+              </div>
+              
+              <div class="valor-item">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h3>Calidad</h3>
+                  <p>Trabajos con estándares profesionales y repuestos de calidad</p>
+                </div>
+              </div>
+              
+              <div class="valor-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h3>Puntualidad</h3>
+                  <p>Respeto por tu tiempo con servicios rápidos y eficientes</p>
+                </div>
+              </div>
+            </div>
+            
+            <p>
+              Mi prioridad es que cada cliente se sienta <strong>tranquilo, seguro y satisfecho</strong> con el trabajo realizado. Cada vehículo que reviso lo trato como si fuera mío, con el mismo cuidado y dedicación.
+            </p>
+            
+            <p>
+              Puedes conocer la experiencia de otros clientes en la sección de <a href="testimonios.html" class="testimonio-link">testimonios reales <i class="fas fa-external-link-alt"></i></a>.
+            </p>
+          </div>
+          
+          <a href="servicios.html" class="cta-servicios">
+            <i class="fas fa-tools"></i> Ver servicios disponibles
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA MEJORADO -->
   <footer>
-    <p>&copy; 2025 Mecánica a Domicilio - <a href="terminos.html">Términos y condiciones</a></p>
-    <p>🚗 ¡Gracias por visitarnos! Esperamos poder ayudarte muy pronto. Que tengas un excelente día. 😊</p>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>DON JORGE MECÁNICA</h3>
+        <p>Servicio mecánico profesional a domicilio</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+        <p><i class="fas fa-envelope"></i> contacto@donjorgemecanica.com</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Testimonios</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Don Jorge Mecánica. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>

@@ -3,50 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mecánica a Domicilio</title>
-
-  <!-- Fuente profesional (Google Fonts) -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Don Jorge Mecánica - Servicio a Domicilio</title>
+  
+  <!-- Fuentes mejoradas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
   <!-- Enlace al CSS -->
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/estilos_foother_haver.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR MEJORADO -->
   <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="testimonios.html">Testimonios</a></li>
-      <li><a href="acerca.html">Acerca de</a></li>
-      <li><a href="terminos.html">Términos</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-car"></i></span>
+        <span class="logo-text">DON JORGE MECÁNICA</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+      </ul>
+    </div>
   </nav>
+
+  <!-- HERO SECTION (NUEVA SECCIÓN) -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">DON JORGE MECÁNICA</h1>
+      <p class="hero-subtitle">Servicio mecánico profesional a domicilio</p>
+      <div class="hero-buttons">
+        <a href="servicios.html" class="hero-btn services-btn">
+          <i class="fas fa-tools"></i> Nuestros servicios
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
     <section id="bienvenida">
-      <h1>¡Bienvenido a la mecánica de confianza!</h1>
-      <p>Este sitio web está hecho para que conozcas los servicios que ofrecemos, la experiencia de nuestros clientes y toda la información necesaria para agendar tu servicio mecánico a domicilio.</p>
+      <div class="welcome-container">
+        <h2>¡Bienvenido a <span class="brand-highlight">Don Jorge Mecánica</span>!</h2>
+        <p class="welcome-text">Servicio mecánico profesional a domicilio con más de 35 años de experiencia. Ofrecemos soluciones rápidas, honestas y con garantía para tu vehículo.</p>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-clock"></i>
+            <h3>Servicio Rápido</h3>
+            <p>Atendemos en lo mas pronto posible y con Puntualidad</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Garantía</h3>
+            <p>Todos nuestros trabajos tienen garantía</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-home"></i>
+            <h3>A Domicilio</h3>
+            <p>No necesitas mover tu auto</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- BOTONES PRINCIPALES -->
     <section id="botones">
       <h2>¿Qué deseas hacer?</h2>
       <div class="botones-contenedor">
-        <a href="servicios.html" class="boton">Ver servicios</a>
-        <a href="testimonios.html" class="boton">Ver testimonios</a>
-        <a href="acerca.html" class="boton">Conocer al mecánico</a>
+        <a href="servicios.html" class="boton">
+          <i class="fas fa-tools"></i> Ver servicios
+        </a>
+        <a href="testimonios.html" class="boton">
+          <i class="fas fa-comment-dots"></i> Ver testimonios
+        </a>
+        <a href="acerca.html" class="boton">
+          <i class="fas fa-user-tie"></i> Conocer al mecánico
+        </a>
       </div>
     </section>
   </main>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA MEJORADO -->
   <footer>
-    <p>&copy; 2025 Mecánica a Domicilio - <a href="terminos.html">Términos y condiciones</a></p>
-    <p>🚗 ¡Gracias por visitarnos! Esperamos poder ayudarte muy pronto. Que tengas un excelente día. 😊</p>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>DON JORGE MECÁNICA</h3>
+        <p>Servicio mecánico profesional a domicilio</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto (developer web)</h4>
+        <p><i class="fas fa-phone"></i> +57 3011 364432</p>
+        <p><i class="fas fa-envelope"></i> alejandro2007campo1@gmail.com</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Testimonios</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Don Jorge Mecánica. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>

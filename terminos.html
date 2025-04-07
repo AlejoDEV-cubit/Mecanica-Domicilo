@@ -3,49 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Términos y Condiciones</title>
+  <title>Términos y Condiciones | Don Jorge Mecánica</title>
+  
+  <!-- Fuentes mejoradas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Enlace al CSS -->
   <link rel="stylesheet" href="css/terminos.css">
-  <link rel="stylesheet" href="css/estilos_foother_haver.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR MEJORADO -->
   <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="testimonios.html">Testimonios</a></li>
-      <li><a href="acerca.html">Acerca de</a></li>
-      <li><a href="terminos.html">Términos</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-car"></i></span>
+        <span class="logo-text">DON JORGE MECÁNICA</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+      </ul>
+    </div>
   </nav>
+
+  <!-- HERO SECTION PARA TÉRMINOS -->
+  <section id="hero-terminos">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">TÉRMINOS Y CONDICIONES</h1>
+      <p class="hero-subtitle">Conoce nuestras políticas y condiciones de servicio</p>
+    </div>
+  </section>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
     <section id="terminos">
-      <h1>Términos y Condiciones del Servicio</h1>
+      <div class="terminos-container">
+        <div class="terminos-header">
+          <h2>Términos y Condiciones del Servicio</h2>
+          <p class="fecha-actualizacion">Última actualización: <span id="fecha"></span></p>
+        </div>
 
-      <p><strong>1. Respeto y buena comunicación:</strong> Nuestro servicio está basado en el respeto mutuo. Cualquier forma de agresividad, irrespeto o trato indebido será motivo suficiente para cancelar o rechazar un servicio.</p>
+        <div class="terminos-content">
+          <div class="termino-item">
+            <div class="termino-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="termino-text">
+              <h3>1. Respeto y buena comunicación</h3>
+              <p>Nuestro servicio está basado en el respeto mutuo. Cualquier forma de agresividad, irrespeto o trato indebido será motivo suficiente para cancelar o rechazar un servicio.</p>
+            </div>
+          </div>
 
-      <p><strong>2. Evidencia de los trabajos:</strong> Todos los diagnósticos, presupuestos, valores acordados y garantías son registrados mediante capturas de pantalla, mensajes por WhatsApp y/o fotografías, para garantizar claridad en el proceso. En caso de desacuerdos, estos registros se utilizarán como referencia oficial.</p>
+          <div class="termino-item">
+            <div class="termino-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <div class="termino-text">
+              <h3>2. Evidencia de los trabajos</h3>
+              <p>Todos los diagnósticos, presupuestos, valores acordados y garantías son registrados mediante capturas de pantalla, mensajes por WhatsApp y/o fotografías, para garantizar claridad en el proceso. En caso de desacuerdos, estos registros se utilizarán como referencia oficial.</p>
+            </div>
+          </div>
 
-      <p><strong>3. Garantía y responsabilidad posterior:</strong> No se aceptan reclamaciones fuera del periodo de garantía previamente establecido. En cada trabajo se realiza registro visual (fotos del antes y el después). Si el vehículo es manipulado posteriormente por otro mecánico, cualquier inconveniente generado dejará sin validez nuestra garantía. Si se detecta alteración o mala intervención posterior, se informará al cliente.</p>
+          <div class="termino-item">
+            <div class="termino-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="termino-text">
+              <h3>3. Garantía y responsabilidad posterior</h3>
+              <p>No se aceptan reclamaciones fuera del periodo de garantía previamente establecido. En cada trabajo se realiza registro visual (fotos del antes y el después). Si el vehículo es manipulado posteriormente por otro mecánico, cualquier inconveniente generado dejará sin validez nuestra garantía. Si se detecta alteración o mala intervención posterior, se informará al cliente.</p>
+            </div>
+          </div>
 
-      <p><strong>4. Suministro de repuestos:</strong> No somos distribuidores de repuestos ni vendemos componentes automotrices. Cuando el trabajo requiere repuestos, se asesora al cliente sobre las distintas opciones (marcas, calidades, precios, durabilidad). Si el cliente opta por un repuesto de menor calidad, aún con advertencias sobre posibles fallas futuras, se asume que dicha decisión es de su total responsabilidad. En muchos casos, se puede rechazar realizar un trabajo si el repuesto no cumple con un estándar mínimo de calidad.</p>
+          <div class="termino-item">
+            <div class="termino-icon">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div class="termino-text">
+              <h3>4. Suministro de repuestos</h3>
+              <p>No somos distribuidores de repuestos ni vendemos componentes automotrices. Cuando el trabajo requiere repuestos, se asesora al cliente sobre las distintas opciones (marcas, calidades, precios, durabilidad). Si el cliente opta por un repuesto de menor calidad, aún con advertencias sobre posibles fallas futuras, se asume que dicha decisión es de su total responsabilidad. En muchos casos, se puede rechazar realizar un trabajo si el repuesto no cumple con un estándar mínimo de calidad.</p>
+            </div>
+          </div>
 
-      <p><strong>5. Forma de pago:</strong> El pago se realiza directamente al finalizar el trabajo y de forma presencial. No se realizan trabajos a crédito. En casos donde el pago sea demorado sin justificación, se podrá considerar para futuras decisiones y posiblemente rechazar nuevas solicitudes de servicio por falta de confianza.</p>
+          <div class="termino-item">
+            <div class="termino-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <div class="termino-text">
+              <h3>5. Forma de pago</h3>
+              <p>El pago se realiza directamente al finalizar el trabajo y de forma presencial. No se realizan trabajos a crédito. En casos donde el pago sea demorado sin justificación, se podrá considerar para futuras decisiones y posiblemente rechazar nuevas solicitudes de servicio por falta de confianza.</p>
+            </div>
+          </div>
 
-      <p><strong>6. Transparencia y seguridad:</strong> Nuestro objetivo es brindar un servicio honesto, claro y profesional. Por eso mantenemos registro de todo el proceso para proteger tanto al cliente como al técnico.</p>
+          <div class="termino-item">
+            <div class="termino-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <div class="termino-text">
+              <h3>6. Transparencia y seguridad</h3>
+              <p>Nuestro objetivo es brindar un servicio honesto, claro y profesional. Por eso mantenemos registro de todo el proceso para proteger tanto al cliente como al técnico.</p>
+            </div>
+          </div>
 
-      <p>Gracias por confiar en nosotros. Trabajamos con compromiso, respeto y dedicación para brindarte siempre el mejor servicio posible.</p>
+          <div class="terminos-footer">
+            <p>Gracias por confiar en nosotros. Trabajamos con compromiso, respeto y dedicación para brindarte siempre el mejor servicio posible.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA MEJORADO -->
   <footer>
-    <p>&copy; 2025 Mecánica a Domicilio - <a href="terminos.html">Términos y condiciones</a></p>
-    <p>🔧 ¡Que tengas un excelente día! Gracias por tu visita. 🚘</p>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>DON JORGE MECÁNICA</h3>
+        <p>Servicio mecánico profesional a domicilio</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+        <p><i class="fas fa-envelope"></i> contacto@donjorgemecanica.com</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Testimonios</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Don Jorge Mecánica. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
+  <!-- SCRIPTS -->
+  <script>
+    // Mostrar fecha actual
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('fecha').textContent = new Date().toLocaleDateString('es-ES', options);
+  </script>
 </body>
 </html>

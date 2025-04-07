@@ -3,94 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios</title>
+  <title>Servicios | Don Jorge Mecánica</title>
+  
+  <!-- Fuentes mejoradas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Enlace al CSS -->
   <link rel="stylesheet" href="css/servicios.css">
-  <link rel="stylesheet" href="css/estilos_foother_haver.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR MEJORADO -->
   <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="testimonios.html">Testimonios</a></li>
-      <li><a href="acerca.html">Acerca de</a></li>
-      <li><a href="terminos.html">Términos</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-car"></i></span>
+        <span class="logo-text">DON JORGE MECÁNICA</span>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+      </ul>
+    </div>
   </nav>
+
+  <!-- HERO SECTION PARA SERVICIOS -->
+  <section id="hero-servicios">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">NUESTROS SERVICIOS</h1>
+      <p class="hero-subtitle">Soluciones mecánicas profesionales a domicilio</p>
+    </div>
+  </section>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
-      <section id="servicios" class="seccion-servicios">
-        <h1>Servicios disponibles</h1>
-        <p class="subtitulo">Conoce los trabajos que realizamos, desde diagnósticos hasta reparaciones completas. Da clic o pasa el mouse para ver más detalles.</p>
-    
-        <div class="contenedor-servicios">
-          <div class="tarjeta-servicio">
-            <h3>Electricidad automotriz</h3>
+    <section id="servicios" class="seccion-servicios">
+      <div class="section-header">
+        <h2>Servicios Disponibles</h2>
+        <p class="section-subtitle">Conoce los trabajos que realizamos, desde diagnósticos hasta reparaciones completas</p>
+      </div>
+
+      <div class="contenedor-servicios">
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Electricidad automotriz</h3>
+          <div class="servicio-descripcion">
             <p>La electricidad automotriz es un servicio esencial que permite que todos los sistemas eléctricos del vehículo, desde las luces hasta el arranque y los sistemas de seguridad, funcionen correctamente.</p>
           </div>
-          <div class="tarjeta-servicio">
-            <h3>Aire acondicionado automotriz</h3>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <h3>Aire acondicionado automotriz</h3>
+          <div class="servicio-descripcion">
             <p>¿El aire no enfría o huele mal? Revisión completa del sistema, carga de gas, limpieza de filtros y chequeo de compresores para dejarlo perfecto.</p>
           </div>
-          <div class="tarjeta-servicio">
-            <h3>Freno general</h3>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <h3>Freno general</h3>
+          <div class="servicio-descripcion">
             <p>Revisión de pastillas, discos, líquido y calibración. Garantizamos seguridad con repuestos de alta calidad.</p>
           </div>
-          <div class="tarjeta-servicio">
-            <h3>Mecánica rápida</h3>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3>Mecánica rápida</h3>
+          <div class="servicio-descripcion">
             <p>Cambios de aceite, filtros, revisión de niveles y ajustes básicos. Todo rápido pero bien hecho.</p>
           </div>
-          <div class="tarjeta-servicio">
-            <h3>Sincronización</h3>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Sincronización</h3>
+          <div class="servicio-descripcion">
             <p>Ajustamos el encendido, revisamos bujías y filtros para que el motor rinda mejor y gaste menos gasolina.</p>
           </div>
-          <div class="tarjeta-servicio">
-            <h3>Escaneo</h3>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">
+            <i class="fas fa-laptop-medical"></i>
+          </div>
+          <h3>Escaneo</h3>
+          <div class="servicio-descripcion">
             <p>Diagnóstico electrónico con escáner. Detectamos fallas ocultas en sensores, inyectores y sistemas eléctricos.</p>
           </div>
-          <div class="tarjeta-servicio">
-            <h3>Diagnóstico virtual o presencial</h3>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>Diagnóstico virtual o presencial</h3>
+          <div class="servicio-descripcion">
             <p>Servicio para detectar problemas y cotizar repuestos. Puede ser por videollamada o en tu casa.</p>
           </div>
         </div>
-      </section>
-    
+      </div>
+    </section>
 
-    <!-- BLOQUE DE CONTACTO -->
+    <!-- BLOQUE DE CONTACTO MEJORADO -->
     <section id="contacto">
-      <h2>¿Deseas contactar al mecánico?</h2>
-
-      <p>✅ Puedes escribir al WhatsApp para <strong>agendar una cita</strong> o <strong>consultar precios generales</strong>, lo llamaremos lo mas antes posible. Esa conversación inicial <strong>no tiene costo</strong> y es solo para aclarar dudas básicas.</p>
-
-      <p>⚠️ Pero si deseas un <strong>diagnóstico del vehículo</strong> —ya sea <em>virtual</em> o <em>presencial</em>— este servicio <strong>sí tiene costo</strong>, pues requiere análisis técnico, tiempo y experiencia.</p>
-
-      <p>📲 En el caso de los diagnósticos virtuales, <strong>debes realizar el pago anticipado</strong> por Nequi antes de recibir el análisis detallado. (el precio de este es aclarado en la misma llamada inicial)</p>
-
-      <p>🧰 El servicio presencial se paga normalmente <strong>al finalizar el trabajo</strong>.</p>
-
-      <!-- Checkbox de aceptación -->
-      <label>
-        <input type="checkbox" id="aceptaTerminos">
-        Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a>
-      </label><br><br>
-
-      <!-- Botón con verificación -->
-      <button id="btnWhatsapp">📲 Escribir por WhatsApp</button>
+      <div class="contacto-container">
+        <div class="contacto-info">
+          <h2>¿Deseas contactar al mecánico?</h2>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Puedes escribir al WhatsApp para <strong>agendar una cita</strong> o <strong>consultar precios generales</strong>, lo llamaremos lo más antes posible. Esa conversación inicial <strong>no tiene costo</strong> y es solo para aclarar dudas básicas.</p>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <p>Pero si deseas un <strong>diagnóstico del vehículo</strong> —ya sea <em>virtual</em> o <em>presencial</em>— este servicio <strong>sí tiene costo</strong>, pues requiere análisis técnico, tiempo y experiencia.</p>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <p>En el caso de los diagnósticos virtuales, <strong>debes realizar el pago anticipado</strong> por Nequi antes de recibir el análisis detallado. (el precio de este es aclarado en la misma llamada inicial)</p>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <p>El servicio presencial se paga normalmente <strong>al finalizar el trabajo</strong>.</p>
+          </div>
+          
+          <div class="terminos-container">
+            <label class="checkbox-label">
+              <input type="checkbox" id="aceptaTerminos">
+              <span class="checkmark"></span>
+              Acepto los (<a href="terminos.html" target="_blank"> términos y condiciones)</a>
+            </label>
+          </div>
+          
+          <button id="btnWhatsapp" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+          </button>
+        </div>
+        
+        <div class="contacto-imagen">
+          <img src="foto/mano-del-mecánico-que-sostiene-el-servicio-de-automóviles-y-la-verificación.webp" alt="Mecánico trabajando">
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA MEJORADO -->
   <footer>
-    <p>&copy; 2025 Mecánica a Domicilio - <a href="terminos.html">Términos y condiciones</a></p>
-    <p>🚗 ¡Gracias por visitarnos! Esperamos poder ayudarte muy pronto. Que tengas un excelente día. 😊</p>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>DON JORGE MECÁNICA</h3>
+        <p>Servicio mecánico profesional a domicilio</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto (developer web) </h4>
+        <p><i class="fas fa-phone"></i> +57 301 1368699</p>
+        <p><i class="fas fa-envelope"></i> alejandro2007campo1@gmail.com</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Testimonios</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 Don Jorge Mecánica. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
-  <!-- SCRIPT -->
+  <!-- SCRIPTS -->
   <script>
-    document.getElementById("btnWhatsapp").addEventListener("click", function () {
+    // Animación para las tarjetas de servicio
+    document.querySelectorAll('.tarjeta-servicio').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('active');
+      });
+    });
+
+    // Botón de WhatsApp
+    document.getElementById("btnWhatsapp").addEventListener("click", function() {
       const acepta = document.getElementById("aceptaTerminos").checked;
 
       if (acepta) {
@@ -100,14 +225,5 @@
       }
     });
   </script>
-  <script>
-    document.querySelectorAll('.tarjeta-servicio').forEach(card => {
-      card.addEventListener('click', () => {
-        card.classList.toggle('active');
-      });
-    });
-  </script>
-  
-
 </body>
 </html>
