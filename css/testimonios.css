@@ -26,8 +26,7 @@ body {
 
 /* ======== NAVBAR MEJORADO ======== */
 nav {
-  position: sticky;
-  top: 0;
+  /* Eliminamos position: sticky para que no se quede pegado */
   width: 100%;
   background-color: var(--dark-color);
   z-index: 1000;
@@ -38,7 +37,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem; /* Reducimos el padding */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -46,52 +45,48 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px; /* Reducimos el gap */
   cursor: pointer;
 }
 
 .logo-icon {
   color: var(--primary-color);
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Tamaño más pequeño */
 }
 
 .logo-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.1rem; /* Reducimos el tamaño */
   color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px; /* Menor espaciado */
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem; /* Espacio menor entre items */
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.95rem; /* Texto más pequeño */
   position: relative;
-  padding: 0.5rem 0;
+  padding: 0.4rem 0; /* Padding reducido */
   transition: var(--transition);
 }
 
-nav ul li a.active {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
+/* Resto del CSS se mantiene igual */
 nav ul li a::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 3px;
+  height: 2px; /* Línea más delgada */
   background-color: var(--primary-color);
   transition: width 0.3s ease-in-out;
 }
