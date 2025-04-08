@@ -26,85 +26,80 @@
   
   /* ======== NAVBAR MEJORADO ======== */
   nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: var(--dark-color);
-    z-index: 1000;
-    box-shadow: var(--shadow);
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-  }
-  
-  .logo-icon {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-  }
-  
-  .logo-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 1.1rem;
-    position: relative;
-    padding: 0.5rem 0;
-    transition: var(--transition);
-  }
-  
-  nav ul li a.active {
-    color: var(--primary-color);
-    font-weight: 600;
-  }
-  
-  nav ul li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease-in-out;
-  }
-  
-  nav ul li a:hover::after,
-  nav ul li a:focus::after {
-    width: 100%;
-  }
-  
-  nav ul li a:hover,
-  nav ul li a:focus {
-    color: #ffffff;
-  }
+  /* Eliminamos position: sticky para que no se quede pegado */
+  width: 100%;
+  background-color: var(--dark-color);
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem; /* Reducimos el padding */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reducimos el gap */
+  cursor: pointer;
+}
+
+.logo-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem; /* Tamaño más pequeño */
+}
+
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem; /* Reducimos el tamaño */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.8px; /* Menor espaciado */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Espacio menor entre items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem; /* Texto más pequeño */
+  position: relative;
+  padding: 0.4rem 0; /* Padding reducido */
+  transition: var(--transition);
+}
+
+/* Resto del CSS se mantiene igual */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px; /* Línea más delgada */
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+  width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ffffff;
+}
   
   /* ======== HERO SECTION PARA ACERCA DE ======== */
   #hero-acerca {
